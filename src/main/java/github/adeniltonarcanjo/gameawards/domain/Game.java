@@ -9,6 +9,7 @@ public class Game implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private String name;
     @Column(length = 500)
     private String description;
@@ -18,11 +19,22 @@ public class Game implements Serializable {
     public Game() {
     }
 
-    public Game(String name, String description, String cover, long votes) {
+
+
+    public Game(Long id, String name, String description, String cover, long votes) {
+        this.id = id;
         this.name = name;
         this.description = description;
         this.cover = cover;
         this.votes = votes;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -55,5 +67,20 @@ public class Game implements Serializable {
 
     public void setVotes(long votes) {
         this.votes = votes;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Game)) return false;
+
+        Game game = (Game) o;
+
+        return getId() != null ? getId().equals(game.getId()) : game.getId() == null;
+    }
+
+    @Override
+    public int hashCode() {
+        return getId() != null ? getId().hashCode() : 0;
     }
 }
