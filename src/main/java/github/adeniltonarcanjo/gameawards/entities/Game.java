@@ -1,4 +1,4 @@
-package github.adeniltonarcanjo.gameawards.domain;
+package github.adeniltonarcanjo.gameawards.entities;
 
 import javax.persistence.*;
 import java.io.Serializable;

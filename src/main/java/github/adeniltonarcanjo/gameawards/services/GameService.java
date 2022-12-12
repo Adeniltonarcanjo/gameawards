@@ -1,7 +1,6 @@
-package github.adeniltonarcanjo.gameawards.service;
+package github.adeniltonarcanjo.gameawards.services;
 
-import github.adeniltonarcanjo.gameawards.domain.Game;
-import org.apache.catalina.LifecycleState;
+import github.adeniltonarcanjo.gameawards.entities.Game;
 
 import java.util.List;
 

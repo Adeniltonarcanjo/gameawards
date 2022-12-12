@@ -1,11 +1,11 @@
-package github.adeniltonarcanjo.gameawards.service.impl;
+package github.adeniltonarcanjo.gameawards.services.impl;
 
 
-import github.adeniltonarcanjo.gameawards.domain.Game;
-import github.adeniltonarcanjo.gameawards.repository.GameRepository;
-import github.adeniltonarcanjo.gameawards.service.GameService;
-import github.adeniltonarcanjo.gameawards.service.exception.BusinessException;
-import github.adeniltonarcanjo.gameawards.service.exception.NoContetException;
+import github.adeniltonarcanjo.gameawards.entities.Game;
+import github.adeniltonarcanjo.gameawards.repositories.GameRepository;
+import github.adeniltonarcanjo.gameawards.services.GameService;
+import github.adeniltonarcanjo.gameawards.services.exception.BusinessException;
+import github.adeniltonarcanjo.gameawards.services.exception.NoContetException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

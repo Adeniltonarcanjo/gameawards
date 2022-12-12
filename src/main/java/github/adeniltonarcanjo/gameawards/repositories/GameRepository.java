@@ -1,6 +1,6 @@
-package github.adeniltonarcanjo.gameawards.repository;
+package github.adeniltonarcanjo.gameawards.repositories;
 
-import github.adeniltonarcanjo.gameawards.domain.Game;
+import github.adeniltonarcanjo.gameawards.entities.Game;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
